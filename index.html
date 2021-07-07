@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>thuongtruong1009</title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+
+  <!-----------------This is body---------------->
+  <body>
+    <img
+      width="100"
+      src="https://avatars.githubusercontent.com/u/71834167?s=400&u=3424f4c12863bc79f82c574d0c9ba05f2f65b8dd&v=4"
+      alt="avatar author"
+    />
+    <h2>
+      Chào các bạn mình là Thương Trường
+    </h2>
+    <div>
+      <p>
+        Mình là sinh viên tại Đại học Quốc Tế. <br />
+        Rất vui khi được làm quen với các bạn !
+      </p>
+      <h4>
+        Sở thích của mình là:
+      </h4>
+      <ul>
+        <li>Xem phim</li>
+        <li>Ca hát</li>
+        <li>Nghe nhạc</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Đôi nét tiểu sử</h4>
+      <table>
+        <tr>
+          <th>Thứ tự</th>
+          <th>Công việc</th>
+          <th>Thời gian</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>mầm non Hoa Lan</td>
+          <td>2003-2006</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>tiểu học Tiến Hưng B</td>
+          <td>2006-2011</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>trung học cơ sở Tiến Hưng</td>
+          <td>2011-2015</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>trung học phổ thông Hùng Vương</td>
+          <td>2016-2019</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>đại học Quốc Tế</td>
+          <td>2019-nay</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h4>Giải trí cùng tôi</h4>
+      <script>
+        function light(sw) {
+          var pic;
+          if (sw == 0) {
+            pic =
+              "https://raw.githubusercontent.com/o7planning/webexamples/master/javascript/getstarted/light-off.gif";
+          } else {
+            pic =
+              "https://raw.githubusercontent.com/o7planning/webexamples/master/javascript/getstarted/light-on.gif";
+          }
+          document.getElementById("myImage").src = pic;
+        }
+      </script>
+
+      <img
+        id="myImage"
+        src="https://raw.githubusercontent.com/o7planning/webexamples/master/javascript/getstarted/light-off.gif"
+        width="100"
+        height="180"
+      />
+      <p id="demo" style="background-color: yellow"></p>
+      <p>
+        <button type="button" onclick="light(1)">Bật đèn</button>
+        <button type="button" onclick="light(0)">Tắt đèn</button>
+        <button
+          type="button"
+          onclick="document.getElementById('demo').innerHTML = Date()"
+        >
+          Nhấn vào để xem thời gian bật đèn
+        </button>
+      </p>
+    </div>
+
+    <div>
+      <h4>
+        Nếu có thắc mắc, hãy đặt câu hỏi cho mình tại đây
+      </h4>
+      <form>
+        <input type="text" placeholder="--Điền câu hỏi tại đây--" />
+        <button style="background-color: powderblue">Gửi</button>
+      </form>
+      Hoặc liên hệ với mình qua
+      <ul>
+        <li>Email: ititiu19228@student.hcmiu.edu.vn</li>
+        <li>
+          Facebook: <a href="facebook.com/thuongtruong1009">thuongtruong1009</a>
+        </li>
+      </ul>
+    </div>
+    <div></div>
+  </body>
+</html>
 
