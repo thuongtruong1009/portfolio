@@ -1,4 +1,6 @@
 ## Welcome to GitHub Pages
+ 
+![visitors](https://visitor-badge.glitch.me/badge?&page_id=thuongtruong1009)
 
 You can use the [editor on GitHub](https://github.com/thuongtruong1009/Static-website/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
