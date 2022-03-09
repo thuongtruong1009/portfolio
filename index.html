@@ -1,451 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://telegram.com/favicon.ico" />
-    <title>thuongtruong1009</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .container {
-        background-color: #F8F8FF;
-        border: 1px double #CD5C5C;
-        border-radius: 70px;
-      }
-      .font-quote {
-        font-family: "Satisfy", cursive;
-        text-align: center;
-        font-size: 13px;
-      }
-      .avatar {
-        border: 3px solid #1E90FF;
-        border-radius: 100px;
-        position: relative;
-        margin: auto;
-        display: block;
-      }
 
-      /* offset-x | offset-y | blur-radius | spread-radius | color */
-      /* border-width | border-style | border-color */
-      .box {
-        box-shadow: 2px 5px 6px 0px rgba(0, 0, 0, 0.5);
-        background-color: powderblue;
-        border: 1.5px solid black;
-        border-radius: 6px;
-        font-size: 12px;
-        type: button;
-        /*display: grid;
-        place-content: center;*/
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-      /*thao tác trên toàn bảng*/
-      table {
-        font-family: monospace, sans-serif;
-        border-collapse: collapse;
-        width: 60%;
-        border-style: dotted;
-      }
-
-      /*thao tác trên hàng con*/
-      td,
-      th {
-        border: 1px solid #dddddd;
-        text-align: center;
-        padding: 5px;
-        border-radius: 8px;
-      }
-
-      /*thao tác trên hàng chẵn*/
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
-      tr:hover {
-        background-color: #ddd;
-      }
-
-      :root {
-        --penguin-size: 300px;
-        --penguin-skin: black;
-        --penguin-belly: #FFDAB9;
-        --penguin-beak: orange;
-      }
-
-      @media (max-width: 350px) {
-        :root {
-          --penguin-size: 200px;
-          --penguin-skin: black;
-        }
-      }
-
-      .penguin {
-        --penguin-skin: black;
-        --penguin-belly: #FFDAB9;
-        --penguin-beak: orange;
-        position: relative;
-        margin: auto;
-        display: block;
-        margin-top: 5%;
-        width: 300px;
-        height: 300px;
-      }
-
-      .penguin-top {
-        top: 10%;
-        left: 25%;
-
-        /* Change code below this line */
-        background: var(--pengiun-skin, black);
-        /* Change code above this line */
-
-        width: 50%;
-        height: 45%;
-        border-radius: 70% 70% 60% 60%;
-      }
-
-      .penguin-bottom {
-        top: 40%;
-        left: 23.5%;
-        background: var(--penguin-skin, black);
-        width: 53%;
-        height: 45%;
-        border-radius: 70% 70% 100% 100%;
-
-        /* Change code below this line */
-        background: var(--pengiun-skin);
-        /* Change code above this line */
-
-        width: 53%;
-        height: 45%;
-        border-radius: 70% 70% 100% 100%;
-      }
-      @keyframes wave {
-        10% {
-          transform: rotate(110deg);
-        }
-        20% {
-          transform: rotate(130deg);
-        }
-        30% {
-          transform: rotate(110deg);
-        }
-        40% {
-          transform: rotate(130deg);
-        }
-      }
-
-      .right-hand {
-        top: 10%;
-        left: 25%;
-        background: var(--penguin-skin, black);
-        width: 30%;
-        height: 60%;
-        border-radius: 30% 30% 120% 30%;
-        transform: rotate(130deg);
-        z-index: -1;
-        animation-duration: 3s;
-        animation-name: wave;
-        animation-iteration-count: infinite;
-        transform-origin: 0% 0%;
-        animation-timing-function: linear;
-      }
-
-      .left-hand {
-        top: 0%;
-        left: 75%;
-        background: var(--penguin-skin, black);
-        width: 30%;
-        height: 60%;
-        border-radius: 30% 30% 30% 120%;
-        transform: rotate(-45deg);
-        z-index: -1;
-      }
-
-      .right-cheek {
-        top: 15%;
-        left: 35%;
-        background: var(--penguin-belly, white);
-        width: 60%;
-        height: 70%;
-        border-radius: 70% 70% 60% 60%;
-      }
-
-      .left-cheek {
-        top: 15%;
-        left: 5%;
-        background: var(--penguin-belly, white);
-        width: 60%;
-        height: 70%;
-        border-radius: 70% 70% 60% 60%;
-      }
-
-      .belly {
-        top: 60%;
-        left: 2.5%;
-        background: var(--penguin-belly, white);
-        width: 95%;
-        height: 100%;
-        border-radius: 120% 120% 100% 100%;
-      }
-
-      .right-feet {
-        top: 85%;
-        left: 60%;
-        background: var(--penguin-beak, orange);
-        width: 15%;
-        height: 30%;
-        border-radius: 50% 50% 50% 50%;
-        transform: rotate(-80deg);
-        z-index: -2222;
-      }
-
-      .left-feet {
-        top: 85%;
-        left: 25%;
-        background: var(--penguin-beak, orange);
-        width: 15%;
-        height: 30%;
-        border-radius: 50% 50% 50% 50%;
-        transform: rotate(80deg);
-        z-index: -2222;
-      }
-
-      .right-eye {
-        top: 45%;
-        left: 60%;
-        background: black;
-        width: 15%;
-        height: 17%;
-        border-radius: 50%;
-      }
-
-      .left-eye {
-        top: 45%;
-        left: 25%;
-        background: black;
-        width: 15%;
-        height: 17%;
-        border-radius: 50%;
-      }
-
-      .sparkle {
-        top: 25%;
-        left: 25%;
-        background: white;
-        width: 40%;
-        height: 50%;
-        border-radius: 50%;
-      }
-
-      .blush-right {
-        top: 65%;
-        left: 15%;
-        background: pink;
-        width: 15%;
-        height: 10%;
-        border-radius: 50%;
-      }
-
-      .blush-left {
-        top: 65%;
-        left: 70%;
-        background: pink;
-        width: 15%;
-        height: 10%;
-        border-radius: 50%;
-      }
-
-      .beak-top {
-        top: 60%;
-        left: 40%;
-        background: var(--penguin-beak, orange);
-        width: 20%;
-        height: 10%;
-        border-radius: 50%;
-      }
-
-      .beak-bottom {
-        top: 65%;
-        left: 42%;
-        background: var(--penguin-beak, orange);
-        width: 16%;
-        height: 10%;
-        border-radius: 50%;
-      }
-
-      body {
-        background: white;
-      }
-
-      .penguin * {
-        position: absolute;
-      }
-    </style>
-  </head>
-
-  <!-----------------This is body---------------->
-  <body class="container">
-    <img
-      class="avatar"
-      width="120"
-      src="https://avatars.githubusercontent.com/u/71834167?s=400&u=3424f4c12863bc79f82c574d0c9ba05f2f65b8dd&v=4"
-      alt="avatar author"
-    />
-    <h1 style="text-align: center">
-      Hi guys! I'm Thương Trường
-    </h1>
-    <p class="font-quote">
-      Hãy cố gắng hết sức, trời sẽ không phụ lòng người
-    </p>
-    <div>
-      <p>
-        Mình tên là Trần Nguyễn Thương Trường- hiện đang là sinh viên năm 2 khoa
-        Công nghệ Thông tin tại Đại học Quốc Tế - ĐHQG TPHCM. <br />
-        Đây là lần đầu tiên mình bước chân vào thế giới web. Mong đuợc học hỏi
-        và cống hiến.<br />
-        Rất vui khi được làm quen với các bạn !
-      </p>
-      <h4>
-        Sở thích của mình là:
-      </h4>
-      <ul>
-        <li>Xem phim</li>
-        <li>Ca hát</li>
-        <li>Nghe nhạc</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Đôi nét tiểu sử</h4>
-      <table>
-        <tr>
-          <th>Thứ tự</th>
-          <th>Công việc</th>
-          <th>Thời gian</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>mầm non Hoa Lan -- Đồng Xoài Bình Phước</td>
-          <td>2003-2006</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>tiểu học Tiến Hưng B -- Đồng Xoài Bình Phước</td>
-          <td>2006-2011</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>trung học cơ sở Tiến Hưng -- Đồng Xoài Bình Phước</td>
-          <td>2011-2015</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>trung học phổ thông Hùng Vương -- Đồng Xoài Bình Phước</td>
-          <td>2016-2019</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>đại học Quốc Tế -- Thủ Đức Hồ Chí Minh</td>
-          <td>2019-nay</td>
-        </tr>
-      </table>
-    </div>
-    <div>
-      <h4>Giải trí nho nhỏ</h4>
-      <script>
-        function light(sw) {
-          var pic;
-          if (sw == 0) {
-            pic =
-              "https://raw.githubusercontent.com/o7planning/webexamples/master/javascript/getstarted/light-off.gif";
-          } else {
-            pic =
-              "https://raw.githubusercontent.com/o7planning/webexamples/master/javascript/getstarted/light-on.gif";
-          }
-          document.getElementById("myImage").src = pic;
-        }
-      </script>
-
-      <img
-        id="myImage"
-        src="https://raw.githubusercontent.com/o7planning/webexamples/master/javascript/getstarted/light-off.gif"
-        width="100"
-        height="180"
-      />
-      <p id="demo" style="background-color: yellow"></p>
-      <p>
-        <button type="button" onclick="light(1)">Bật đèn</button>
-        <button type="button" onclick="light(0)">Tắt đèn</button>
-        <button
-          type="button"
-          onclick="document.getElementById('demo').innerHTML = Date()"
-        >
-          Nhấn vào để xem thời gian bật đèn
-        </button>
-      </p>
-    </div>
-
-    <div>
-      <h4>
-        Nếu có thắc mắc, hãy đặt câu hỏi cho mình tại đây
-      </h4>
-      <form>
-        <input
-          type="text"
-          placeholder="--Enter your question--"
-          onfocus="this.placeholder = ''"
-          onblur="this.placeholder = '--Enter your question--'"
-        />
-        <button class="box">Gửi</button> <br />
-        <label>
-          <input
-            type="checkbox"
-            name="personality"
-            value="Nhận phản hồi qua email"
-            checked
-          />
-          Nhận phản hồi qua email
-        </label>
-      </form>
-      <ul>
-        <li>Email: ititiu19228@student.hcmiu.edu.vn</li>
-        <li>
-          Facebook:
-          <a href="https://facebook.com/thuongtruong1009"
-            >facebook.com/thuongtruong1009</a
-          >
-        </li>
-        <li>
-          Github:
-          <a href="https://github.com/thuongtruong1009"
-            >github.com/thuongtruong1009</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="penguin">
-      <div class="penguin-bottom">
-        <div class="right-hand"></div>
-        <div class="left-hand"></div>
-        <div class="right-feet"></div>
-        <div class="left-feet"></div>
-      </div>
-      <div class="penguin-top">
-        <div class="right-cheek"></div>
-        <div class="left-cheek"></div>
-        <div class="belly"></div>
-        <div class="right-eye">
-          <div class="sparkle"></div>
+<body>
+    <section class="home" id="home">
+        <header>
+            <div class="header-brand">
+                <h1>Portfo<span>lio.</span></h1>
+            </div>
+            <div class="header-menu">
+                <a href="#home"><button class="custom-btn"><span>Homepage</span></button></a>
+                <a href="#about"><button class="custom-btn"><span>About</span></button></a>
+                <a href="#collection"><button class="custom-btn"><span>Collections</span></button></a>
+                <a href="#photo"><button class="custom-btn"><span>Photo</span></button></a>
+                <a href=""><button class="custom-btn"><span>Habit</span></button></a>
+                <a href=""><button class="custom-btn"><span>Profile</span></button></a>
+                <a href="#schedule"><button class="custom-btn"><span>Schedule</span></button></a>
+            </div>
+        </header>
+        <div class="home-content">
+            <div>
+                <h3>Hello, my name is</h3>
+                <h1>Thuong Truong</h1>
+                <button>Explore</button>
+            </div>
         </div>
-        <div class="left-eye">
-          <div class="sparkle"></div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-title">
+            <h1>About me</h1>
         </div>
-        <div class="blush-right"></div>
-        <div class="blush-left"></div>
-        <div class="beak-top"></div>
-        <div class="beak-bottom"></div>
-      </div>
-    </div>
-  </body>
+        <div class="about-content">
+            <div class="about-content-avatar">
+                <img src="/public/img/avatar.jpg" alt="avatar" width="350" height="350">
+            </div>
+            <div class="about-content-desc">
+                <h3>I'm Thuong Truong and I'm a developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo
+                    illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                <button>Download CV</button>
+            </div>
+        </div>
+    </section>
+    <section class="collection" id="collection">
+        <div class="collection-title">
+            <h1>Collections</h1>
+        </div>
+        <div class="collection-content">
+            <div>
+                <i class="fa-solid fa-paintbrush"></i>
+                <h2>Web Design</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Advertising</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Apps Design</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-tv"></i>
+                <h2>Front-end</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Back-end</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Mobile</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</h5>
+            </div>
+        </div>
+    </section>
+    <section class="schedule" id="schedule">
+        <div class="schedule-title">
+            <h1>Schedule</h1>
+        </div>
+    </section>
+    <footer>
+        <h6>Created by <a href="">Thuong Truong</a> |  <span>&copy;</span> 2022 All rights reserved.</h6>
+    </footer>
+</body>
+
 </html>
