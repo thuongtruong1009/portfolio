@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thuongtruong1009</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
                 <a href="#home"><button class="custom-btn"><span>Homepage</span></button></a>
                 <a href="#about"><button class="custom-btn"><span>About</span></button></a>
                 <a href="#collection"><button class="custom-btn"><span>Collections</span></button></a>
-                <a href="#photo"><button class="custom-btn"><span>Photo</span></button></a>
+                <a href="#photos"><button class="custom-btn"><span>Photo</span></button></a>
                 <a href=""><button class="custom-btn"><span>Habit</span></button></a>
                 <a href=""><button class="custom-btn"><span>Profile</span></button></a>
                 <a href="#schedule"><button class="custom-btn"><span>Schedule</span></button></a>
@@ -87,14 +89,30 @@
             </div>
         </div>
     </section>
+    <section class="photos" id="photos">
+        <div class="photos-title">
+            <h1>My Libraries</h1>
+        </div>
+    </section>
     <section class="schedule" id="schedule">
         <div class="schedule-title">
             <h1>Schedule</h1>
         </div>
     </section>
     <footer>
-        <h6>Created by <a href="">Thuong Truong</a> |  <span>&copy;</span> 2022 All rights reserved.</h6>
+        <h6>Created by <a href="">thuongtruong1009</a> | <span>&copy;</span> 2022 All rights reserved.</h6>
     </footer>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('sticky');
+                } else {
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,12 @@
+.photos{
+    font-family: var(--font);
+    padding-top: 5rem;
+    color: white;
+}
+.photos-title h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 4rem;
+    text-shadow: 2px 2px 5px #888;
+}

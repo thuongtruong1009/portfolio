@@ -1,0 +1,16 @@
+footer{
+    background-image: url("https://uraansoftskills.com/wp-content/uploads/2018/11/portfolio-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+footer a{
+    color: var(--red);
+}

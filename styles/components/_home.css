@@ -1,0 +1,118 @@
+.home{
+    background: #102938;
+    background-image: url("https://enterprise.indiegogo.com/easyship/wp-content/uploads/sites/18/2020/01/Page-4-portfolio-banner.png");
+    background-repeat: no-repeat;
+    background-position: 70% 70%;
+    font-family: var(--font);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem 1rem 10rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    z-index: 9;
+}
+
+header.sticky {
+    background: #fff;
+    opacity: 0.9;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.header-brand{
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-out;
+}
+header.sticky .header-brand, header.sticky .custom-btn{
+    color: black;
+}
+.header-brand span{
+    color: var(--red);
+}
+.header-menu{
+    display: flex;
+}
+.custom-btn {
+    width: 7rem;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    line-height: 42px;
+    padding: 0;
+}
+
+.custom-btn:hover {
+    color: #f0094a;
+    background: transparent;
+    box-shadow: none;
+}
+
+.custom-btn:before,
+.custom-btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 0;
+    background: #f0094a;
+    transition: 400ms ease all;
+}
+
+.custom-btn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.custom-btn:hover:before,
+.custom-btn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+.home-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    color: white;
+    padding-top: 15rem;
+    padding-left: 10rem;
+}
+.home-content > div > button{
+    padding: 0.75rem 3rem;
+    border-radius: 0.5rem;
+    background: var(--red);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    transition: 0.2s linear;
+}
+.home-content > div > button:hover{
+    background: transparent;
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+.home-content > div > h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.home-content > div > h1{
+    font-size: 4rem;
+    margin: 1rem 0;
+}

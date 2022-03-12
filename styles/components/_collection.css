@@ -1,0 +1,46 @@
+.collection{
+    /* background: black; */
+    background-image: url("https://www.engineready.com/wp-content/uploads/2016/08/portfolio-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7rem 0;
+    font-family: var(--font);
+    color: white;
+}
+.collection-title h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 3rem;
+}
+.collection-content{
+    padding: 0 3rem;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.collection-content > div{
+    text-align: center;
+    background: rgb(37, 32, 32);
+    border-radius: 0.75rem;
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.collection-content > div:hover{
+    background: #DC143C;
+}
+.collection-content > div > h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.75rem 0;
+}
+.collection-content > div > i{
+    color: var(--red);
+    font-size: 3rem;
+}
