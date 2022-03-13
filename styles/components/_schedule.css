@@ -1,11 +1,14 @@
 .schedule{
     background: white;
     background-image: url("http://cloudstechnologies.in/asset/img/slider-img/homepage-img-1.png");
+    /* background-image: url("../../public/img/photo_bg.png"); */
     background-repeat: no-repeat;
     background-position: 0% 70%;
     font-family: var(--font);
     padding-top: 5rem;
+    position: relative;
 }
+
 .schedule-title h1{
     text-align: center;
     font-size: 2.5rem;

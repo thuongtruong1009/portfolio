@@ -1,7 +1,10 @@
 .photos{
+    background: white;
     font-family: var(--font);
     padding-top: 5rem;
-    color: white;
+    background-image: url('../../public/parttern/bgWhite.png');background-size: cover;
+    background-position: 105% 95%;
+    background-repeat: no-repeat;
 }
 .photos-title h1{
     text-align: center;
@@ -9,4 +12,30 @@
     font-weight: 500;
     padding-bottom: 4rem;
     text-shadow: 2px 2px 5px #888;
+}
+.photos-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+}
+.bg-cell {
+    flex: 30%;
+    max-width: 30%;
+    height: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bg-cell  img{
+    border-radius: 0.5rem;
+    transition: 0.5s linear;
+    display: block;
+}
+.bg-cell:hover img{
+    transform: scale(1.2);
 }
