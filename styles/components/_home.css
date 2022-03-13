@@ -1,15 +1,18 @@
 .home{
     background: #102938;
-    background-image: url("https://enterprise.indiegogo.com/easyship/wp-content/uploads/sites/18/2020/01/Page-4-portfolio-banner.png");
+    /* background-image: url("https://cdn.pixabay.com/photo/2020/06/24/05/29/tree-5334823_960_720.png"); */
+    /* background: black; */
+    background-image: url("../../public/parttern/tree.png");
+    background-size: 60%;
     background-repeat: no-repeat;
-    background-position: 70% 70%;
+    background-position: 100% 0%;
     font-family: var(--font);
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem 1rem 10rem;
+    padding: 1.2rem 5rem 1.2rem 10rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,6 +25,7 @@ header.sticky {
     background: #F4F5F6;
     opacity: 0.9;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 5rem 0.8rem 10rem;
 }
 .header-brand{
     cursor: pointer;
@@ -43,6 +47,9 @@ header.sticky .custom-btn:hover{
 }
 .header-menu{
     display: flex;
+}
+header.sticky .custom-btn {
+    text-shadow: var(--shadow);
 }
 .custom-btn {
     width: 7rem;
@@ -107,6 +114,9 @@ header.sticky .custom-btn:hover{
     font-size: 1.2rem;
     color: white;
     transition: 0.2s linear;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
 .home-content > div button:hover{
     background: transparent;

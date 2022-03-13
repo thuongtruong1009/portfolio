@@ -33,7 +33,13 @@
   cursor: pointer;
   border: 2px solid #dc143c;
 }
-.collection-content > div:hover {
+.collection-content > div:nth-child(2n){
+  background: transparent;
+}
+.collection-content > div:nth-child(2n):hover{
+  background: #dc143c;
+}
+.collection-content > div:hover:nth-child(2n+1) {
   background: transparent;
 }
 .collection-content > div > h2 {
@@ -41,11 +47,19 @@
   font-weight: 500;
   padding: 0.75rem 0;
 }
-.collection-content > div > i {
+.collection-content > div:nth-child(2n+1)  > i{
   color: white;
   font-size: 3rem;
   transition: 0.2s linear;
 }
-.collection-content > div:hover > i {
+.collection-content > div:nth-child(2n) > i{
   color: var(--red);
+  font-size: 3rem;
+  transition: 0.2s linear;
+}
+.collection-content > div:hover:nth-child(2n+1) > i {
+  color: var(--red);
+}
+.collection-content > div:hover:nth-child(2n) > i{
+  color: white;
 }
