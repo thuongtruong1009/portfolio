@@ -12,7 +12,11 @@
     font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: 4rem;
-    text-shadow: var(--shadow);;
+    text-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
 }
 .about-content{
     display: grid;
