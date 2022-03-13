@@ -1,9 +1,5 @@
 .schedule{
     background: white;
-    background-image: url("http://cloudstechnologies.in/asset/img/slider-img/homepage-img-1.png");
-    /* background-image: url("../../public/img/photo_bg.png"); */
-    background-repeat: no-repeat;
-    background-position: 0% 70%;
     font-family: var(--font);
     padding-top: 5rem;
     position: relative;
@@ -16,3 +12,127 @@
     padding-bottom: 4rem;
     text-shadow: 2px 2px 5px #888;
 }
+.schedule-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.languages p{
+    color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: black;
+}
+.progress{
+    width: 90%;
+    margin-bottom: 1rem;
+    height: 0.75rem;
+    background: #e6e6e6;
+    border-radius: 0.2rem 0.5rem 0.5rem 0.2rem;
+    
+}
+.load{
+    height: 95%;
+    border-radius: 0.2rem 0.5rem 0.5rem 0.2rem;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    box-shadow: var(--shadow);;
+}
+.html{
+    width: var(--html-width);
+    background: var(--html-color);
+    animation: html-loading;
+}
+@keyframes html-loading {
+  0% {
+    width: 0;
+    background: var(--html-color);
+  }
+  100% {
+    width: 20%;
+    background: var(--html-color);
+  }
+}
+.css{
+    width: var(--css-width);
+    background: var(--css-color);
+    animation: css-loading;
+}
+@keyframes css-loading {
+  0% {
+    width: 0;
+    background: var(--css-color);
+  }
+  100% {
+    width: var(--css-width);
+    background: var(--css-color);
+  }
+}
+.js{
+    width: var(--js-width);
+    background: var(--js-color);
+    animation: js-loading;
+}
+@keyframes js-loading {
+  0% {
+    width: 0;
+    background: var(--js-color);
+  }
+  100% {
+    width: var(--js-width);
+    background: var(--js-color);
+  }
+}
+.vue{
+    width: var(--vue-width);
+    background: var(--vue-color);
+    animation: vue-loading;
+}
+@keyframes vue-loading {
+  0% {
+    width: 0;
+    background: var(--vue-color);
+  }
+  100% {
+    width: var(--vue-width);
+    background: var(--vue-color);
+  }
+}
+.java{
+    width: var(--java-width);
+    background: var(--java-color);
+    animation: java-loading;
+}
+@keyframes java-loading {
+  0% {
+    width: 0;
+    background: var(--java-color);
+  }
+  100% {
+    width: var(--java-width);
+    background: var(--java-color);
+  }
+}
+.tools{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  width: 90%;
+}
+.tools > img{
+  color: #27A4F7;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 1.5px 1.5px 4px rgb(207, 207, 207);
+    transition: 0.1s linear;
+}
+.tools > img:hover{
+  background: rgb(242, 242, 242);
+}
+
+

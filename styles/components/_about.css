@@ -12,7 +12,7 @@
     font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: 4rem;
-    text-shadow: 2px 2px 5px #888;
+    text-shadow: var(--shadow);;
 }
 .about-content{
     display: grid;
@@ -26,7 +26,7 @@
 }
 .about-content-avatar > img{
     border-radius: 1rem;
-    box-shadow: 2px 2px 5px #888;
+    box-shadow: var(--shadow);;
 }
 .about-content-desc {
     align-self: center;

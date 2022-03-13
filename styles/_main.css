@@ -39,7 +39,7 @@ button{
     border-color: transparent;
     outline: none;
 }
-section{
+.home, .about, .collection, .schedule{
     width: 100vw;
     height: 100vh;
 }

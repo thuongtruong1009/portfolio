@@ -3,15 +3,28 @@
     font-family: var(--font);
     padding-top: 5rem;
     background-image: url('../../public/parttern/bgWhite.png');background-size: cover;
-    background-position: 105% 95%;
+    background-position: 100% 95%;
     background-repeat: no-repeat;
+    position: relative;
+}
+.photos:before{
+    content:url('../../public/parttern/circle.svg');
+    position: absolute;
+    top: 80%;
+    left: 0%;
+}
+.photos:after{
+    content:url('../../public/parttern/circle.svg');
+    position: absolute;
+    top: 0%;
+    left: 15%;
 }
 .photos-title h1{
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: 4rem;
-    text-shadow: 2px 2px 5px #888;
+    text-shadow: var(--shadow);
 }
 .photos-content{
     display: flex;
@@ -19,20 +32,22 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 0.5rem;
+    padding-bottom: 0.25rem;
 }
 .bg-cell {
     flex: 30%;
     max-width: 30%;
     height: auto;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     overflow: hidden;
     position: relative;
     display: inline-block;
     cursor: pointer;
+    box-shadow: var(--shadow);;
 }
 
-.bg-cell  img{
-    border-radius: 0.5rem;
+.bg-cell img{
+    border-radius: 0.75rem;
     transition: 0.5s linear;
     display: block;
 }

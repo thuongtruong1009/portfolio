@@ -1,4 +1,15 @@
 :root{
     --red: #DC0C11;
     --font: 'Ubuntu', sans-serif;
+    --shadow: 2px 2px 5px #888;
+    --html-width: 82%;
+    --html-color: linear-gradient(30deg, #f15353, #ff7990);
+    --css-width: 65%;
+    --css-color: linear-gradient(30deg, #1774ff, #74c4ec);
+    --js-width: 56%;
+    --js-color: linear-gradient(30deg, #eeff00, #d2da00ab);
+    --vue-width: 60%;
+    --vue-color: linear-gradient(30deg, #00b655, #cdfc21);
+    --java-width: 50%;
+    --java-color: linear-gradient(30deg, #93278f, #00a99d);;
 }
