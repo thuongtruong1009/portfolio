@@ -20,7 +20,7 @@ textarea {
     flex-direction: column;
     gap: 1.5rem;
 }
-.social-work > img{
+.social-work img{
     width: 4rem;
     height: 4rem;
     padding: 0.25rem;
@@ -30,7 +30,7 @@ textarea {
     box-shadow: 1.5px 1.5px 3px rgb(207, 207, 207);
     transition: 0.1s linear;
 }
-.social-work > img:hover{
+.social-work img:hover{
     background: rgba(255, 255, 255, 0.548);
 }
 

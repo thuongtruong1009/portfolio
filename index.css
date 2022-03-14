@@ -1,12 +1,12 @@
-@import url("styles/_font.css");
-@import url("styles/_variables.css");
-@import url("styles/_main.css");
+@import url("./styles/_font.css");
+@import url("./styles/_variables.css");
+@import url("./styles/_main.css");
 
-@import url("styles/components/_home.css");
-@import url("styles/components/_about.css");
-@import url("styles/components/_collection.css");
-@import url("styles/components/_photos.css");
-@import url("styles/components/_schedule.css");
-@import url("styles/components/_habit.css");
-@import url("styles/components/_contact.css");
-@import url("styles/components/_footer.css");
+@import url("./styles/components/_home.css");
+@import url("./styles/components/_about.css");
+@import url("./styles/components/_collection.css");
+@import url("./styles/components/_photos.css");
+@import url("./styles/components/_schedule.css");
+@import url("./styles/components/_habit.css");
+@import url("./styles/components/_contact.css");
+@import url("./styles/components/_footer.css");
