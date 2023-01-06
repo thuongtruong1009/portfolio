@@ -1,12 +1,3 @@
-@import "./styles/_font.css";
-@import "./styles/_variables.css";
-@import "./styles/_main.css";
-
-@import "./styles/components/_home.css";
-@import "./styles/components/_about.css";
-@import "./styles/components/_collection.css";
-@import "./styles/components/_photos.css";
-@import "./styles/components/_schedule.css";
-@import "./styles/components/_habit.css";
-@import "./styles/components/_contact.css";
-@import "./styles/components/_footer.css";
+@import "./styles/font.css";
+@import "./styles/variables.css";
+@import "./styles/main.css";

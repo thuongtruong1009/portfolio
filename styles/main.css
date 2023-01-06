@@ -1,3 +1,12 @@
+@import "./components/home.css";
+@import "./components/about.css";
+@import "./components/collection.css";
+@import "./components/photos.css";
+@import "./components/schedule.css";
+@import "./components/habit.css";
+@import "./components/contact.css";
+@import "./components/footer.css";
+
 *, html{
     padding: 0;
     margin: 0;
